@@ -6,8 +6,6 @@ import torch
 from torch.optim import Adam
 import gym
 import math
-from matplotlib import animation
-import matplotlib.pyplot as plt
 from save_as_gif import save_frames_as_gif 
 import pdb #Set a breakpoint with pdb.set_trace()
 
@@ -167,11 +165,12 @@ class DQN_agent():
 
             env.reset()
         save_frames_as_gif(frames)
+        env.close()
             
 
 
-agent = DQN_agent()
-agent.train()
-agent.perform()
+# agent = DQN_agent()
+# agent.train()
+# agent.perform()
 
 

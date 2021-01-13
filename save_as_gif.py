@@ -1,9 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jan 13 17:07:53 2021
-
-@author: grego
-"""
+from matplotlib import animation
+import matplotlib.pyplot as plt
 
 def save_frames_as_gif(frames, path='./', filename='gym_animation.gif'):
 
@@ -17,4 +13,4 @@ def save_frames_as_gif(frames, path='./', filename='gym_animation.gif'):
         patch.set_data(frames[i])
 
     anim = animation.FuncAnimation(plt.gcf(), animate, frames = len(frames), interval=50)
-    anim.save(path + filename, writer='Pillow', fps=300)
+    anim.save(path + filename, writer='Pillow', fps=600)
