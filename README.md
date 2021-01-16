@@ -16,6 +16,7 @@ The Q-net implements a very simple neural network, that the agent uses to learn 
 For the target in Q-learning we need to store the parametes of the old Q-function. We then update the old Q-net very target_update steps. 
 
 # Results: 
-I have not tried to optimize all parameters perfectly since this was only for educational purpose, but here are my results: 
+I have not tried to optimize all parameters perfectly since this was only for educational purpose, but here are my results for the Cartpole environment: 
 
 ![](gym_animation.gif)
+
